@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>About</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body{
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        background-image: url(https://github.com/nonknows/aeilsweb/blob/main/imgonline-com-ua-resizeMPXHW5f4ExnrcBU-removebg-preview.png?raw=true);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-color: rgba(255,255,255,0.4);
+        background-blend-mode: lighten;
+        background-position: 25em;
+
+    }
+    @keyframes colorChange {
+      50% {color: rgb(105, 3, 153);}
+      100% {color: rgb(0, 0, 0);}
+    }
+    @keyframes slideIn {
+      from {
+        transform: translateX(-100%);}
+      to {transform: translateX(0);}
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to { opacity: 1;}
+    }
+    .fadeIn {
+      animation-name: fadeIn;
+    }
+    .colorChange {
+      animation-name: colorChange;
+    }
+    @media only screen and (max-width: 600px){
+        
+    }
+    .greetings-head1 {
+        text-indent: 65px;
+        font-family: 'times new roman';
+        font-size: 32px;
+        font-weight: bold;
+        background-color: #ffc0cb;
+        text-align: left;
+        padding: 10px;
+        display:flex;
+        margin: 0;
+    }
+    .greetings-head1 {
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+    }
+    .button1 {
+        text-decoration: underline;
+        background-color: transparent;
+        color: black;
+        border: 0;
+        cursor: pointer;
+        font-family: 'Courier New';
+        font-size: 15px;
+        font-weight: bold;
+        margin-right: 30px;
+    }
+    .button1:hover {
+        color: white;
+    }
+    .button1:active {
+        color: white;
+    }
+    .button2{
+        text-decoration: underline;
+        background-color: transparent;
+        color: black;
+        border: 0;
+        cursor: pointer;
+        font-family: 'Courier New';
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .button2:hover {
+        color: white;
+    }
+    .button2:active {
+        color: white;
+    }
+    .button3 {
+        text-decoration: underline;
+        background-color: transparent;
+        color: black;
+        border: 0;
+        cursor: pointer;
+        font-family: 'Courier New';
+        font-size: 15px;
+        font-weight: bold;
+        margin-left: 30px;
+    }
+    .button3:hover {
+        color: white;
+    }
+    .button3:active {
+        color: white;
+    }
+    .button-group {
+        position: absolute;
+        top: 25px;
+        right: 50px;
+        display: flex;
+    }
+
+
+    .abouthead {
+        font-family:'Courier New', Courier, monospace;
+        font-size: 1.375em;
+        font-weight: bold;
+        text-decoration: underline;
+        display: inline-block;
+        margin: 10px 0px 0px 10px;
+
+    }
+
+    .firstpara {
+        font-family: 'Times New Roman';
+        font-size: 17px;
+        display: flexbox;
+        margin: 10px 0px 0px 10px;
+        padding: 5px;
+        width: 46.875em;
+        line-height: 25px;
+        text-align: justify;
+        background-color: beige;
+    }
+    .aboutauthor {
+        font-family:'Courier New', Courier, monospace;
+        font-size: 1.375em;
+        font-weight: bold;
+        text-decoration: underline;
+        display: inline-block;
+        margin: 10px 0px 0px 10px;
+
+    }
+
+    .secpara {
+        font-family: 'Times New Roman';
+        font-size: 17px;
+        display: flexbox;
+        margin: 10px 0px 0px 10px;
+        padding: 5px;
+        width: 46.875em;
+        line-height: 25px;
+        text-align: justify;
+        background-color: beige;
+    }
+
+    #educ {
+        font-family: sans-serif;
+        color: rgb(112, 13, 43);
+        font-size: 1.375em;
+        font-weight: bold;
+        text-decoration: none;
+        display: inline-block;
+        margin: 0 0px 0px 10px;
+    }
+
+    .ed {
+        font-family: arial;
+        font-size: 15px;
+        display: flexbox;
+        margin: 0 0px 0px 10px;
+        padding: 3px;
+        width: 46.875em;
+        line-height: 25px;
+        text-align: justify;
+        background-color: beige;
+    }
+    #skills {
+        font-family: sans-serif;
+        color: rgb(112, 13, 43);
+        font-size: 1.375em;
+        font-weight: bold;
+        text-decoration: none;
+        display: inline-block;
+        margin: 0 0px 0px 10px;
+    }
+
+    .charac {
+        font-family: arial;
+        font-size: 15px;
+        display: flexbox;
+        margin: 0 0px 0px 10px;
+        padding: 3px;
+        width: 46.875em;
+        line-height: 25px;
+        text-align: justify;
+        background-color: beige;
+    }
+
+    #projects {
+        font-family: sans-serif;
+        font-size: 18px;
+        color: rgb(112, 13, 43);
+        font-size: 1.375em;
+        font-weight: bold;
+        text-decoration: none;
+        display: inline-block;
+        margin: 0px 0px 0px 10px;
+    }
+
+    .project {
+        font-family: arial;
+        font-size: 15px;
+        display: flexbox;
+        margin: 0px 0px 0px 10px;
+        padding: 3px;
+        width: 46.875em;
+        line-height: 25px;
+        text-align: justify;
+        background-color: beige;
+    }
+    .descriptions {
+        text-align: right;
+    }
+    #author-image {
+        display: inline-block;
+    }
+    img {
+        position: absolute;
+        top: 200px;
+        right: 100px;
+        border: 0.3125em solid rgb(252, 0, 84);
+        border-radius: 3.125em;
+        border-style:dashed double;
+    }
+    
+    #contacts {
+        background-color: none;
+        position: fixed;
+        bottom: 10px;
+        margin-top: 0;
+    }
+    
+    #footer {
+        background-color: none;
+        color:rgb(155, 155, 155);
+        text-align: center;
+        padding: 5px 0;
+        position: fixed;
+        bottom: 0;
+        margin-top: 5px;
+        width: 100%;
+        font-size: small;
+        }
+    span {
+        color: brown;
+    }
+    .gmail {
+        position: fixed;
+        bottom: 10px;
+        margin-top: 5px;
+        align-items: center;
+    }
+    .contact-phrase {
+        font-size: 10px;
+        font-family: 'Trebuchet MS';
+        position: absolute;
+        bottom: 10px;
+        top: 900px;
+        right: 50px;
+    }
+    .gmail {
+    background-color: none;
+    background: none;
+}
+
+</style>
+
+
+<div class="button-group">
+    <a href="AEILWEB.html" target="_self">
+        <button class="button1">Home</button></a>
+    <a href="About.html" target="_self">
+        <button class="button2">About</button></a>
+    <a href="Contact.html" target="_self">
+        <button class="button3">Contact</button></a>
+</div>
+
+<div class="greetings-head1 colorChange">AEIL WEBSITE</div>
+
+<body>
+    <section>
+        <p class="abouthead">ABOUT</p>
+        <p class="firstpara">Hi, the concept of this page was originally to construct a personal HTML 
+            website as a part of learning the <span>Web Design course</span>. However, circumstances evolved, 
+            leading the founder to transform this platform into a space open to all individuals seeking to express
+             their emotions, confessions, outbursts, and more, all while maintaining anonymity. We, in Aeils, 
+             believe that anonymity provides a sanctuary for individuals to release their thoughts without concerning
+              the judgment of others and, most importantly, to secure their privacy and identity.</p> 
+    </section>
+        <p class="aboutauthor">AUTHOR</p>
+        <p class="secpara">Here are some trivia about the author of this website...&#129325;</p>
+    
+        <section id="educ">
+            <p>Education</p>
+            <div class="ed">
+                <ul>
+                    <li>Studied at Lakan Dula High School</li>
+                    <li>Studied at Philippine Christian University-Manila</li>
+                    <li>Studying at Polytechnic University of the Philippines-OUS</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills">
+            <p>Skills and Character</p>
+            <div class="charac">
+                <ul>
+                    <li>HTML: Able to create the basic structure of website pages.</li>
+                    <li>CSS: Able to style and format website pages</li>
+                    <li>Professional, reliable, and receptive.</li>
+                    <li>Hard-working and can manage activities in a well-organized manner.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <div id="author-image">
+            <img src="https://github.com/nonknows/aeilsweb/blob/main/IMG_20220526_055516.jpg?raw=true" 
+            width="300px"
+            height="400px"></div>
+    
+        <section id="projects">
+            <p>Projects</p>
+            <div class="project">
+                <ul>
+                    <li>PowerPoint Presentation Integrating Hyperlinks</li>
+                    <a href="https://1drv.ms/p/s!AiBQaHfG6RI_k0qG1uGHm7JMieIl?e=L1diR1">PowerPoint Presentation</a></li>
+                    <li>Website Made from Google Sites</li>
+                    <a href="https://sites.google.com/view/aeilos-area/home?authuser=0">Aeilos Website</a> </li>
+                </ul>
+            
+                <p class="descriptions">These are examples of projects authors have completed in previous school years. Among them is a 
+                    PowerPoint presentation that integrates hyperlinks. Another project involved 
+                    developing a website using Google Sites, which simplified the process by allowing 
+                    the creation of a basic webpage through template dragging.</p>
+            </div>
+            
+<footer>
+    <div id="footer">
+        &copy; 2023 Aeils Blog Site. All rights reserved.
+            </div>
+</footer>
+
+</body>
+</html>
